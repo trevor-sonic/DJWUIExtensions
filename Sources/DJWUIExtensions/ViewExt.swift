@@ -10,8 +10,7 @@ import UIKit
 
 public extension UIView {
     
-    func takeScreenshot() -> UIImage {
-        
+    func takeScreenshot(afterScreenUpdates: Bool = true) -> UIImage {
         // Begin context
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
         
@@ -26,5 +25,13 @@ public extension UIView {
             return image
         }
         return UIImage()
+    }
+}
+public extension UIView {
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
     }
 }
