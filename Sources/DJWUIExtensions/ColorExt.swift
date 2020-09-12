@@ -14,9 +14,7 @@ public extension UIColor {
     enum ChangeableAttribute{
         case hue, saturation, brightness, alpha
     }
-//    attribute: UIColor.ChangeableAttribute
-//
-//    func change()->UIColor{}
+
     func change(_ attr:UIColor.ChangeableAttribute, to:CGFloat) -> UIColor {
         
         switch attr {
