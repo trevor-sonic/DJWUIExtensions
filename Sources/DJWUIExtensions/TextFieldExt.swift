@@ -11,9 +11,9 @@ import UIKit
 public extension UITextField {
   
 
-    public func addDoneToolbar(onDone: (target: Any, action: Selector)? = nil) {
+    func addDoneToolbar(onDone: (target: Any, action: Selector)? = nil) {
         
-        let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
+        let onDone = onDone ?? (target: self, action: #selector(doneButtonAction))
         
         let toolbar: UIToolbar = UIToolbar()
         toolbar.barStyle = .default
@@ -45,7 +45,7 @@ public extension UITextField {
 //    }
     
     // Default actions:
-    @objc func doneButtonTapped() {
+    @objc func doneButtonAction() {
         
         self.resignFirstResponder()
         
