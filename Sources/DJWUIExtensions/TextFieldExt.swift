@@ -8,6 +8,7 @@
 
 import UIKit
 
+#if !os(watchOS)
 public extension UITextField {
   
 
@@ -53,3 +54,4 @@ public extension UITextField {
     }
     //func cancelButtonTapped() { self.resignFirstResponder() }
 }
+#endif

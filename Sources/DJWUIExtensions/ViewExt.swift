@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+#if !os(watchOS)
 public extension UIView {
     
     func takeScreenshot(afterScreenUpdates: Bool = true) -> UIImage {
@@ -35,3 +35,4 @@ public extension UIView {
         }
     }
 }
+#endif

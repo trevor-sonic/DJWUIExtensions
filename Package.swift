@@ -9,7 +9,8 @@ let package = Package(
     platforms: [
         .iOS(.v10),
         .macOS(.v10_12),
-        .tvOS(.v10)
+        .tvOS(.v10),
+        .watchOS(.v6)
     ],
     
     products: [
@@ -28,8 +29,9 @@ let package = Package(
         .target(
             name: "DJWUIExtensions",
             dependencies: []),
-        .testTarget(
-            name: "DJWUIExtensionsTests",
-            dependencies: ["DJWUIExtensions"]),
+        
+//        .testTarget(
+//            name: "DJWUIExtensionsTests",
+//            dependencies: ["DJWUIExtensions"]),
     ]
 )

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+#if !os(watchOS)
 extension UISegmentedControl {
     func goVertical() {
         self.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
@@ -29,3 +30,4 @@ extension UISegmentedControl {
         }
     }
 }
+#endif

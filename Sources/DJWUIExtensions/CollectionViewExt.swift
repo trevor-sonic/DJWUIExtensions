@@ -16,6 +16,7 @@ import UIKit
  - scrollPosition: An option that specifies where the supplementaryView should be positioned when scrolling finishes. For a list of possible values, see [UICollectionViewScrollPosition](https://developer.apple.com/documentation/uikit/uicollectionviewscrollposition).
  - animated: Specify true to animate the scrolling behavior or false to adjust the scroll view’s visible content immediately.
  */
+#if !os(watchOS)
 public extension UICollectionView {
     func scrollToSupplementaryView(ofKind kind: String, at indexPath: IndexPath, at scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
         self.layoutIfNeeded();
@@ -79,3 +80,4 @@ public extension UICollectionView {
         }
     }
 }
+#endif

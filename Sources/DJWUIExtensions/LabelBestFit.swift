@@ -7,6 +7,7 @@
 //
 
 import UIKit
+#if !os(watchOS)
 extension UILabel {
     
     /// Will auto resize the contained text to a font size which fits the frames bounds
@@ -20,3 +21,4 @@ extension UILabel {
     }
     
 }
+#endif

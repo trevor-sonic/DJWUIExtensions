@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 @testable import DJWUIExtensions
 
@@ -13,3 +14,4 @@ final class DJWUIExtensionsTests: XCTestCase {
         ("testExample", testExample),
     ]
 }
+#endif

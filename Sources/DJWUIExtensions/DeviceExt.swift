@@ -50,6 +50,7 @@ public enum Model : String {
     unrecognized     = "?unrecognized?"
 }
 
+#if !os(watchOS)
 public extension UIDevice {
     var type: Model {
         var systemInfo = utsname()
@@ -132,3 +133,4 @@ public extension UIDevice {
         return Model.unrecognized
     }
 }
+#endif
