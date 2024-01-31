@@ -7,7 +7,7 @@
 //
 
 #if canImport(UIKit)
-import UIKit
+import UIKit 
 
 /**
  Scrolls the collection view contents until the specified supplementaryView is visible.
