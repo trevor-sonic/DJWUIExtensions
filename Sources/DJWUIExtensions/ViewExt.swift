@@ -6,6 +6,8 @@
 //  Copyright © 2019 dejaWorks. All rights reserved.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 #if !os(watchOS)
 public extension UIView {
@@ -35,4 +37,6 @@ public extension UIView {
         }
     }
 }
+#endif
+
 #endif

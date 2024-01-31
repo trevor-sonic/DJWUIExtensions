@@ -5,7 +5,7 @@
 //  Created by dejaWorks on 28/10/2018.
 //  Copyright © 2018 dejaWorks. All rights reserved.
 //
-
+#if canImport(UIKit)
 import UIKit
 
 public enum Model : String {
@@ -133,4 +133,6 @@ public extension UIDevice {
         return Model.unrecognized
     }
 }
+#endif
+
 #endif

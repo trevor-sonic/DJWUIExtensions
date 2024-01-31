@@ -5,7 +5,7 @@
 //  Created by dejaWorks on 13/10/2018.
 //  Copyright © 2018 dejaWorks. All rights reserved.
 //
-
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - change hue, saturation,brightness, alpha with chaining
@@ -211,3 +211,5 @@ public extension UIColor {
         }
     }
 }
+
+#endif

@@ -6,6 +6,8 @@
 //  Copyright © 2018 dejaWorks. All rights reserved.
 //
 
+#if canImport(UIKit)
+
 import Foundation
 import UIKit
 
@@ -51,3 +53,5 @@ fileprivate extension String {
         return ceil(boundingBox.width)
     }
 }
+
+#endif

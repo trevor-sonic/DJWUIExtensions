@@ -5,6 +5,8 @@
 //  Created by dejaWorks on 29/06/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 public extension UIImage{
@@ -22,3 +24,6 @@ public extension UIImage{
         return tintedImage!
     }
 }
+
+
+#endif

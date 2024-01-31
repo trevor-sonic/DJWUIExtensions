@@ -6,6 +6,7 @@
 //  Copyright © 2019 dejaWorks. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 #if !os(watchOS)
@@ -54,4 +55,6 @@ public extension UITextField {
     }
     //func cancelButtonTapped() { self.resignFirstResponder() }
 }
+#endif
+
 #endif

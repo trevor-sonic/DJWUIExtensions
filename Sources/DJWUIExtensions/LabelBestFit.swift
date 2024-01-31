@@ -6,6 +6,8 @@
 //  Copyright © 2018 dejaWorks. All rights reserved.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 #if !os(watchOS)
 extension UILabel {
@@ -22,3 +24,6 @@ extension UILabel {
     
 }
 #endif
+
+#endif
+
