@@ -7,7 +7,7 @@ let package = Package(
     name: "DJWUIExtensions",
     
     platforms: [
-        .iOS(.v10),
+        .iOS(.v13),
         .macOS(.v10_12),
         .tvOS(.v10),
         .watchOS(.v6)
